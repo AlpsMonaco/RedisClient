@@ -5,7 +5,6 @@ extList = [
     "exe",
     "pdb",
     "ilk",
-    "<empty_ext>",
 ]
 
 if __name__ == "__main__":

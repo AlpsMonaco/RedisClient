@@ -162,9 +162,9 @@ protected:
 		{
 			return "VERB";
 			break;
+		}
 		default:
 			return "UNKNOWN";
-		}
 		}
 	}
 };
