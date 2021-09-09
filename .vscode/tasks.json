@@ -1,0 +1,41 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: cl.exe 生成活动文件",
+			"command": "cl.exe",
+			"args": [
+				"/Zi",
+				"/EHsc",
+				"/nologo",
+				"/Fe:",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"main.cpp",
+				"hiredis/alloc.c",
+				"hiredis/async.c",
+				"hiredis/hiredis.c",
+				"hiredis/net.c",
+				"hiredis/read.c",
+				"hiredis/sds.c",
+				"hiredis/sockcompat.c",
+				"hiredis_cluster/adlist.c",
+				"hiredis_cluster/command.c",
+				"hiredis_cluster/crc16.c",
+				"hiredis_cluster/dict.c",
+				"hiredis_cluster/hiarray.c",
+				"hiredis_cluster/hircluster.c",
+				"hiredis_cluster/hiutil.c",
+				"redis.cpp"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"group": "build",
+			"detail": "编译器: cl.exe"
+		}
+	]
+}
