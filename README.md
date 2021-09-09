@@ -20,7 +20,8 @@ if (rc.err)
 
 ```c++
 RedisReply* r = rc.command("set foo bar");
-// whenever there's an error,both RedisReply* r and RedisClient rc's err field is larget // than zero and they are the same.
+// whenever there's an error,both RedisReply* r and RedisClient rc's err field is larget 
+// than zero and they are the same.
 
 if(rc.err){
     // handle err
